@@ -20,7 +20,6 @@ function Home() {
       <h2 className={styles.title}>Coin Clicker</h2>
       <input
         type="text"
-        // value=??
         onChange={handleNameChange}
         placeholder="Enter your name"
         className={styles.input}
