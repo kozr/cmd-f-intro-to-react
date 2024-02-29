@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import styles from "./TreasureClicker.module.css"; // Ensure you have this CSS module for styling
 
+const DEFAULT_TREASURE_SIZE = 150;
+
 function TreasureClicker(props) {
   // TODO: Increase the number of coins when the treasure is clicked
   const handleClick = () => {
@@ -26,14 +28,14 @@ function TreasureClicker(props) {
         <Image
           alt="Treasure"
           src="/treasure.svg"
-          width={size}
-          height={size}
+          width={DEFAULT_TREASURE_SIZE}
+          height={DEFAULT_TREASURE_SIZE}
           priority
         />
       </div>
-    <h1 className={styles.text}>Welcome ??</h1>
-    <h2 className={styles.text}>Coins: ??</h2>
-  </div>
+      <h1 className={styles.text}>Welcome ??</h1>
+      <h2 className={styles.text}>Coins: ??</h2>
+    </div>
   );  
 }
 
