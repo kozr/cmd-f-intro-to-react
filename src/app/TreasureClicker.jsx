@@ -13,7 +13,7 @@ function TreasureClicker(props) {
   const handleClick = () => {
     setCount(count + 1);
     setSize(DEFAULT_TREASURE_SIZE * 1.1); // Increase size by 10%
-    setTimeout(() => setSize(DEFAULT_TREASURE_SIZE), 100); // Shrink back after 200ms
+    setTimeout(() => setSize(DEFAULT_TREASURE_SIZE), 100); // Shrink back after 100ms
   };
 
   useEffect(() => {
@@ -39,8 +39,8 @@ function TreasureClicker(props) {
           priority
         />
       </div>
-    <h1 style={{color: '#594632'}}>Welcome {props.playerName}</h1>
-    <h2 style={{color: '#594632'}}>Coins: {count}</h2>
+    <h1 className={styles.text}>Welcome {props.playerName}</h1>
+    <h2 className={styles.text}>Coins: {count}</h2>
   </div>
   );  
 }
