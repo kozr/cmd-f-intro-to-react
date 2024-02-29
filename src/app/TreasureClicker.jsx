@@ -1,25 +1,17 @@
 "use client"
 
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import styles from "./TreasureClicker.module.css"; // Ensure you have this CSS module for styling
 
-const DEFAULT_TREASURE_SIZE = 300;
-
 function TreasureClicker(props) {
-  const [count, setCount] = useState(0);
-  const [size, setSize] = useState(DEFAULT_TREASURE_SIZE); // Initial size of the image
-
+  // TODO: Increase the number of coins when the treasure is clicked
   const handleClick = () => {
-    setCount(count + 1);
-    setSize(DEFAULT_TREASURE_SIZE * 1.1); // Increase size by 10%
-    setTimeout(() => setSize(DEFAULT_TREASURE_SIZE), 100); // Shrink back after 200ms
+
   };
 
-  useEffect(() => {
-    // Update the title of the page
-    document.title = `Treasure Clicker - ${count} coins`;
-  }, [count]);
+  // TODO: Change Title when number of coins changes
+  // ??
 
   return (
     <div className={styles.gameContainer}>
@@ -39,8 +31,8 @@ function TreasureClicker(props) {
           priority
         />
       </div>
-    <h1 style={{color: '#594632'}}>Welcome {props.playerName}</h1>
-    <h2 style={{color: '#594632'}}>Coins: {count}</h2>
+    <h1 className={styles.text}>Welcome ??</h1>
+    <h2 className={styles.text}>Coins: ??</h2>
   </div>
   );  
 }

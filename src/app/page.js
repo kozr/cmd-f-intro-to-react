@@ -5,27 +5,22 @@ import TreasureClicker from './TreasureClicker';
 import styles from './page.module.css';
 
 function Home() {
-  const [name, setName] = useState('');
-  const [entered, setEntered] = useState(false);
-
+  // TODO: Store user's name when the user types in the input field
   const handleNameChange = (event) => {
-    setName(event.target.value);
+
   };
 
+  // TODO: Load the game instead of the form
   const handleEnterGame = () => {
-    setEntered(true);
-  };
 
-  if (entered) {
-    return <TreasureClicker playerName={name} />;
-  }
+  };
 
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Coin Clicker</h2>
       <input
         type="text"
-        value={name}
+        // value=??
         onChange={handleNameChange}
         placeholder="Enter your name"
         className={styles.input}
