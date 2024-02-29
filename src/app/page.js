@@ -7,13 +7,17 @@ import styles from './page.module.css';
 function Home() {
   // TODO: Store user's name when the user types in the input field
   const handleNameChange = (event) => {
-
   };
 
   // TODO: Load the game instead of the form
   const handleEnterGame = () => {
 
   };
+
+  // TODO: Render the game instead of the form once the user has entered their name
+  if (false) {
+    return <TreasureClicker />;
+  }
 
   return (
     <div className={styles.container}>
