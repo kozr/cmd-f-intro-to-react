@@ -8,12 +8,12 @@ function Home() {
 
   // TODO: Load the game instead of the form
   const handleEnterGame = () => {
-    setReadyForGame(true)
+
   };
 
   // TODO: Store user's name when the user types in the input field
   const handleNameChange = (event) => {
-    setName(event.target.value);
+
   };
 
   // TODO: Render the game instead of the form once the user has entered their name
